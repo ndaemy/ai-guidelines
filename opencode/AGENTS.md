@@ -21,3 +21,11 @@
 
 - When installing named packages (e.g., storybook, vite, panda css, etc.), always check the latest stable version first with `npm view <package> version` and assume it's usable unless there's a specific compatibility constraint.
 - Verify peer dependency compatibility between packages before installing.
+
+## Image Safety
+
+- LLM image processing crashes the session irreversibly when any dimension exceeds 8,000px. **Always check dimensions before reading an image, and find a smaller alternative if it exceeds the limit.**
+- Local files: use `sips --getProperty pixelWidth --getProperty pixelHeight <file>` to check dimensions (macOS built-in, does not load the image)
+- URL/remote images: download first and check with sips, or use scale/resize parameters if the API supports them
+- Figma: read node size from `absoluteBoundingBox` and apply `min(4, floor(8000 / max(w,h) * 100) / 100)` scale
+- **Never read an image exceeding 8,000px without checking dimensions first.**

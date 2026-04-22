@@ -2,6 +2,7 @@
 
 ## Commit Rules
 
+- **Repository conventions take precedence.** If the working repository has its own commit conventions — documented in AGENTS.md/CONTRIBUTING.md, or inferable from recent commit history — follow those. These global rules are fallbacks when the repo is silent on a given aspect.
 - Do NOT add `Co-authored-by`, `Signed-off-by`, or any AI attribution trailers to commit messages.
 - **One commit = one intent.** Split by purpose, not by file count:
   - Workflow config change → 1 commit
@@ -10,7 +11,16 @@
   - New file(s) → 1 commit per logical unit (related files can be grouped)
 - **Revert test**: "Can this commit be reverted independently and still make sense?" If yes, it's the right size.
 - **Exception**: If two changes MUST ship together (one without the other breaks the build), they belong in the same commit.
+- **Prefer title-only commits.** Use a commit body only when context that cannot be inferred from the commit itself (title + diff + adjacent history) must be captured.
+  - Ask the user before adding a body. Once the user pre-approves body usage (e.g., "feel free to use bodies") for the session or project, use bodies as needed without further confirmation.
+- **Message language.** Match the language pattern established in the repository's commit history. If the history mixes languages, use your own judgment.
+- **Message format.** Follow the format the project uses — either explicitly documented (Conventional Commits, ticket ID prefixes, emoji prefixes, etc.) or implicitly inferable from recent commits.
 - When the user asks to commit, apply the above rules. If everything is genuinely one intent, a single commit is fine.
+
+## Branch Strategy
+
+- **Repository conventions take precedence.** If the working repository has its own branch naming conventions — documented in AGENTS.md/CONTRIBUTING.md, or inferable from existing branches — follow those. These global rules are fallbacks when the repo is silent on a given aspect.
+- **Branch naming format.** Follow the naming format the project uses — either explicitly documented or implicitly inferable from existing branches (e.g., `feat/<slug>`, `fix/<slug>`, `chore/<slug>`, `<username>/<slug>`). If no pattern is detectable, default to a prefix matching the intended commit type.
 
 ## Pull Request Rules
 

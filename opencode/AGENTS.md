@@ -25,6 +25,7 @@
 ## Pull Request Rules
 
 - When creating a GitHub PR, if no specific PR format or style rules are defined, read the titles and bodies of recent PRs in the repository first and match their tone, style, and structure.
+- **Korean PR body tone.** When writing the PR body in Korean, infer the sentence-ending tone (문장 어미) from the repository's recent PRs and match it. If there is no prior PR to reference, mix 해요체 and 했습니다체 so the text reads naturally.
 - Always show the PR title and body to the user for feedback BEFORE actually creating the PR.
 
 ## Dependency Management

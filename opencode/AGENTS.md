@@ -26,6 +26,7 @@
 
 - When creating a GitHub PR, if no specific PR format or style rules are defined, read the titles and bodies of recent PRs in the repository first and match their tone, style, and structure.
 - **Korean PR body tone.** When writing the PR body in Korean, infer the sentence-ending tone (문장 어미) from the repository's recent PRs and match it. If there is no prior PR to reference, mix 해요체 and 했습니다체 so the text reads naturally.
+- **No conversational context in PRs.** Write the PR title and body from the repository's perspective for future reviewers. Do NOT reference the chat session that produced the change — phrases like "사용자가 요청한", "as you asked", "per our conversation", or "the user wants" leak the AI-assistant context and don't belong in a permanent record. State *what* changed and *why* in technical/product terms, not who asked for it.
 - Always show the PR title and body to the user for feedback BEFORE actually creating the PR.
 
 ## Dependency Management

@@ -2,7 +2,7 @@
 
 ## Commit Rules
 
-- **Repository conventions take precedence.** If the working repository has its own commit conventions — documented in AGENTS.md/CONTRIBUTING.md, or inferable from recent commit history — follow those. These global rules are fallbacks when the repo is silent on a given aspect.
+- **Repository conventions take precedence.** If the working repository has its own commit conventions — documented in AGENTS.md/CLAUDE.md/CONTRIBUTING.md, or inferable from recent commit history — follow those. These global rules are fallbacks when the repo is silent on a given aspect.
 - Do NOT add `Co-authored-by`, `Signed-off-by`, or any AI attribution trailers to commit messages.
 - **One commit = one intent.** Split by purpose, not by file count:
   - Workflow config change → 1 commit
@@ -19,7 +19,7 @@
 
 ## Branch Strategy
 
-- **Repository conventions take precedence.** If the working repository has its own branch naming conventions — documented in AGENTS.md/CONTRIBUTING.md, or inferable from existing branches — follow those. These global rules are fallbacks when the repo is silent on a given aspect.
+- **Repository conventions take precedence.** If the working repository has its own branch naming conventions — documented in AGENTS.md/CLAUDE.md/CONTRIBUTING.md, or inferable from existing branches — follow those. These global rules are fallbacks when the repo is silent on a given aspect.
 - **Branch naming format.** Follow the naming format the project uses — either explicitly documented or implicitly inferable from existing branches (e.g., `feat/<slug>`, `fix/<slug>`, `chore/<slug>`, `<username>/<slug>`). If no pattern is detectable, default to a prefix matching the intended commit type.
 
 ## Pull Request Rules

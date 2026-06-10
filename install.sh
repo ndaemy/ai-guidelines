@@ -32,4 +32,7 @@ link() {
 }
 
 # opencode
-link "$SCRIPT_DIR/opencode/AGENTS.md" "$HOME/.config/opencode/AGENTS.md"
+link "$SCRIPT_DIR/shared/AGENTS.md" "$HOME/.config/opencode/AGENTS.md"
+
+# claude code
+link "$SCRIPT_DIR/shared/AGENTS.md" "$HOME/.claude/CLAUDE.md"
